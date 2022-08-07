@@ -1,0 +1,114 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2022-08-07T12:50:18.683Z",
+    "end": "2022-08-07T12:51:01.994Z",
+    "duration": 43311,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06667ad1-7c8c-4284-ab17-0f3ddafb04e1",
+      "title": "",
+      "fullFile": "cypress\\integration\\googleSearch.js",
+      "file": "cypress\\integration\\googleSearch.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "First search",
+          "fullTitle": "First search",
+          "timedOut": null,
+          "duration": 19151,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.log('Google first test starts');\ncy.visit('https://www.google.com');\ncy.get('gLFyf').type('cypress {enter}');\ncy.log('Google first test ends');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `gLFyf`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `gLFyf`, but never found it.\n    at Context.eval (https://www.google.com/__cypress/tests?p=cypress\\integration\\googleSearch.js:103:6)",
+            "diff": null
+          },
+          "uuid": "61601a2f-9be1-41bd-9a5a-578c0891b513",
+          "parentUUID": "06667ad1-7c8c-4284-ab17-0f3ddafb04e1",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Second search",
+          "fullTitle": "Second search",
+          "timedOut": null,
+          "duration": 20245,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.log('Google second test starts');\ncy.visit('https://www.google.com');\ncy.get('gLFyf').type('cypress {enter}');\ncy.log('Google second test ends');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `gLFyf`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `gLFyf`, but never found it.\n    at Context.eval (https://www.google.com/__cypress/tests?p=cypress\\integration\\googleSearch.js:109:6)",
+            "diff": null
+          },
+          "uuid": "12a11acc-e3c0-44c1-b7e4-888c2023564c",
+          "parentUUID": "06667ad1-7c8c-4284-ab17-0f3ddafb04e1",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "61601a2f-9be1-41bd-9a5a-578c0891b513",
+        "12a11acc-e3c0-44c1-b7e4-888c2023564c"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 39396,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
