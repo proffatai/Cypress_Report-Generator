@@ -45,3 +45,6 @@ for the posttest, it is what should run after 'test' has ran. Here we used: `"po
 
 
   "test": "npm run cypress-run || npm run posttest", firstly, we want to generate the reports and we used npm run cypress-run , where cypress-run=> cypress run. This is equivalent to `npx cypress run --reporter mochawesome` that I ran independently. Then I called / ran posttest
+
+
+  to run this project, use: `npm run test`.
